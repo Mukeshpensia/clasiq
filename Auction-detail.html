@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icon.min.css">
+    <link rel="stylesheet" href="css/clasiq.css">
+    <title>Clasiq: Auction detail/</title>
+</head>
+
+<body>
+<header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <div class="container-xxl" id="header">
+                <a class="navbar-brand me-0" href="clasiq.html">
+                    <img src="images/logo.png" alt="Logo" class="w-75">
+                </a>
+                <div>
+                  <span class="d-lg-none px-4"><i class="fas fa-search"></i></span>
+                  <button class="navbar-toggler" type="" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="border-0"><i class="fas fa-bars"></i></span>
+                  </button>  
+                </div>  
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item my-dropdown">
+                        <a class="nav-link active" aria-current="page" href="#">
+                          VIEW LIVE AUCTION
+                        </a>
+                        <!-- <ul class="my-dropdown-menu">
+                          <li class="my-drop-item"><a >LIVE AUCTION</a></li>
+                          <li class="my-drop-item"><a>COMPLETED AUCTION</a></li>
+                        </ul> -->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">HOW IT WORK</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">VALUE YOUR CAR</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="content.html">CLASIQ CONTENT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active d-lg-none" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#Log-in">Log In</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active d-lg-none" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#sign-up">Sign Up</a>
+                      </li>
+                    </ul>
+                    <form class="d-lg-flex d-none align-items-center">
+                        <div>
+                          <input class="form-control me-2 ps-5 col" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="search-icon me-2">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                        <button type="button" class="my-btn bg-theme white border-0 col">
+                            <span class="d-none d-xl-inline" data-bs-toggle="modal" data-bs-target="#sign-up">SIGN
+                                UP / </span> <span data-bs-toggle="modal" data-bs-target="#Log-in">LOGIN</span>
+                        </button>
+                        <div class="serch-i">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Sign up Pop-up -->
+
+    <div class="modal fade" id="sign-up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="text-end p-3 pe-0">
+                    <h4><i class="fas fa-times white" data-bs-dismiss="modal" role="button"></i></h4>
+                </div>
+                <div class="d-flex flex-wrap  justify-content-between align-items-center">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <h2 class="white">ALREADY HAVE AN ACCOUNT?</h2>
+                        <button type="button" class="btn-white my-btn" data-bs-toggle="modal"
+                            data-bs-dismiss="modal" data-bs-target="#Log-in">
+                            LOGIN
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="bg-white p-5">
+                            <h3 class="mb-5">Sign Up</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-0" id="inputEmail4"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control rounded-0" id="formGroupExampleInput"
+                                        placeholder="User Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                        placeholder="New Password">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                        placeholder="Conferm Password">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I accept the <a href="">Terms & Conditions</a> and <a href="">Privacy
+                                            Policy</a>
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        <a href="">Subscribe to the CLASIQ weekly E-mail</a>
+                                    </label>
+                                </div>
+                                <div>
+                                    <button type="button" class="bg-theme white border-0 my-btn"
+                                        data-bs-toggle="modal" data-bs-target="#sign-up">
+                                        SIGN UP
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- logIn Popup modal -->
+
+    <div class="modal fade" id="Log-in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="text-end p-3 pe-0">
+                    <h4><i class="fas fa-times white" data-bs-dismiss="modal" role="button"></i></h4>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <h2 class="white">CREATE A NEW ACCOUNT</h2>
+                        <button type="button" class="btn-white my-btn" data-bs-toggle="modal"
+                            data-bs-dismiss="modal" data-bs-target="#sign-up">
+                            SIGN UP
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="bg-white p-5">
+                            <h3 class="mb-5">Sign In</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control rounded-0" id="inputEmail4"
+                                        placeholder="Email Address / User name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                        placeholder="Enter Password">
+                                </div>
+                                <div class="mb-3 blue">
+                                    Forgot Your Password?
+                                </div>
+                                <div>
+                                    <button type="button" class="bg-theme white border-0 my-btn">
+                                        SIGN IN
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="mt-5 pt-5">
+    <div class="container-xxl">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+                <h2 class="b">1970 Pontia Trans AM</h2>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="pe-2">Share</div>
+                <div><i class="fab fa-facebook-f media"></i></div>
+                <div><i class="fab fa-twitter media"></i></div>
+                <div><i class="fab fa-instagram media"></i></div>
+                <div><i class="fab fa-youtube media"></i></div>
+                <div><i class="far fa-envelope media"></i></div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-lg-9 mb-3">
+                <img src="images/auction-car-2.png" alt="car pic" class="w-100 border border-10">
+            </div>
+            <div class="col-lg-3 border-box-theme p-3 mb-3">
+                <div>
+                    <div><img src="images/c-icon-report.png" alt="" class="py-4"></div>
+                    <div>
+                        <h4 class="b">Independent Pre-purchase inspection report</h4>
+                    </div>
+                    <button class="my-btn org-border bg-transparent b mt-2">VIEW</button>
+                </div>
+                <div class="lower-col">
+                    <h5 class="b">Buyers Premium</h5>
+                    <p>4.5 %</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Place Bid Pop up -->
+    <div class="modal fade" id="place-bid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal modal-dialog-centered">
+          <div class="modal-content bg-transparent border-0 position-relative">
+              <div class="text-end p-3 pe-0">
+                  <h5><i class="fas fa-times white" data-bs-dismiss="modal" role="button">Close</i></h5>
+              </div>
+              <div class="d-flex">
+                  <div class="col-12">
+                      <div class="bg-white p-5">
+                          
+                        <div>
+                          <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">PLACE BID</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ABSENTEE BID</button>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="text-center">
+                              <form>
+                                <input type="number" class="form-control" id="floatingInput" placeholder="Place Bid">
+                              </form>
+                              <div class="text-muted py-3">You are about to Bid $32,200</div>
+                              <button class="my-btn org-border b">PLACE BID</button>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="text-center">
+                              <form>
+                                <input type="number" class="form-control" id="inputNumber" placeholder="Absentee Bid">
+                              </form>
+                              <div class="text-muted py-3">We will place this bid on your behalf, if the auction reaches $30,000</div>
+                              <button class="my-btn org-border b">PLACE BID</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Place Bid Pop up end -->
+</section>
+
+<!-- header 2  -->
+<div class="container-fluid bg py-2" id="nav-2">
+  <div class="container-xxl">
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+              <div><b>Current Bid</b></div>
+              <div><h3 class="theme ms-2 b mb-0">$31,200</h3></div>
+          </div>
+          <div class="d-flex align-items-center">
+              <div>
+                  <button class="my-btn org-border b" data-bs-toggle="modal" data-bs-target="#place-bid">PLACE BID</button>
+              </div>
+              <div>
+                <button class="my-btn b ms-2 black-btn" data-bs-toggle="modal" data-bs-target="#place-bid">ABSENTEE BID</button>
+              </div>
+          </div>
+          <div class="d-none d-lg-block">
+              <b>Ending</b> 5 days 11 hours
+          </div>
+          <div class="d-none d-lg-block">
+              View Comments (27)
+          </div>
+          <div class="d-none d-xl-block">
+              <button class="my-btn b black-btn">HOW IT WORKS</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- gallery -->
+
+<section class="my-5">
+    <div class="container-xxl auction" id="auction">
+      <div class="d-flex justify-content-between align-items-center my-4">
+        <div>
+          <h2><b>Gallery</b></h2>
+        </div>
+        <div>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="Exterior-tab" data-bs-toggle="pill" data-bs-target="#Exterior" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Exterior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Interior-tab" data-bs-toggle="pill" data-bs-target="#Interior" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Interior</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="Exterior" role="tabpanel" aria-labelledby="Exterior-tab">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <a href="">
+                <div class="card">
+                  <img src="images/car-1.png" class="card-img-top" alt="...">
+                </div>
+              </a>
+            </div>
+            <div class="col">
+                <a href="">
+                  <div class="card">
+                    <img src="images/car-2.png" class="card-img-top" alt="...">
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-3.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-4.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-5.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-6.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Interior" role="tabpanel" aria-labelledby="Interior-tab">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <a href="">
+                <div class="card">
+                  <img src="images/car-1.png" class="card-img-top" alt="...">
+                </div>
+              </a>
+            </div>
+            <div class="col">
+                <a href="">
+                  <div class="card">
+                    <img src="images/car-2.png" class="card-img-top" alt="...">
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-3.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-4.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-5.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="">
+                          <div class="card">
+                            <img src="images/car-6.png" class="card-img-top" alt="...">
+                          </div>
+                        </a>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Vahical detail  -->
+<section>
+  <div class="container-xxl">
+    <div class="pt-5">
+      <h2><b>Vehicle Details</b></h2>
+    </div>
+    <div class="py-5">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+              <td class="mdm-bold bg-light">Engine</td>
+              <td>455 T/A motor</td>
+              <td class="mdm-bold bg-light">Transmission</td>
+              <td>T375 w/ a shift kit</td>
+          </tr>
+          <tr>
+              <td class="mdm-bold bg-light">Exterior Color</td>
+              <td>49,665</td>
+              <td class="mdm-bold bg-light">VIN</td>
+              <td>266575C109146</td>
+          </tr>
+          <tr>
+              <td class="mdm-bold bg-light">Exterior Color</td>
+              <td>Pearlescent Peach</td>
+              <td class="mdm-bold bg-light">Interior Color</td>
+              <td>Maroon</td>
+          </tr>
+          <tr>
+              <td class="mdm-bold bg-light">Location</td>
+              <td>Anthem, AZ</td>
+              <td class="mdm-bold bg-light">Title Status</td>
+              <td>Clean</td>
+          </tr>
+          <tr>
+              <td class="mdm-bold bg-light">Seller</td>
+              <td>PaulBurkey</td>
+              <td class="mdm-bold bg-light">Seller Type</td>
+              <td>Private Party</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- vehicle history  -->
+<section class="bg-light Vehicle-History">
+  <div class="container-fluid bg-right histori-1 py-lg-5 px-0">
+    <div class="container-xxl my-5" id="banner">
+      <div class="col-lg-6 col-12 p-5 my-lg-5">
+          <h2 class="mdm-bold mb-lg-3">Vehicle History</h2>
+          <div class="d-lg-none">
+            <img src="images/auction-car-1.png" alt="w-100" class="w-100">
+          </div>
+          <p>
+            This 1965 Pontiac Grand Prix is up for auction by its current owner in Arizona. Having been in Arizona for over 30 years and even winning a car show it is ready to be put into someone else’s care.
+          </p>
+      </div>
+      <div class="col-6 d-lg-block d-none"></div>
+    </div>
+  </div>
+  <div class="container-fluid bg-left histori-2 px-0">
+    <div class="container-xxl py-5" id="banner">
+      <div class="col-6 d-none d-lg-block"></div>
+      <div class="d-lg-none">
+        <img src="images/history-2-mob.png" alt="w-100" class="w-100 px-5">
+      </div>
+      <div class="col-lg-6 col-12 p-5 py-5">
+          <h2 class="mdm-bold my-2">01</h2>
+          <p>
+            The Pearlescent Peach shining exterior has had all of its badges and branding removed, door handles replaced with an electrical opening system, new chrome exhaust tips, and custom wheels. A set of OG chrome rims with baby moon mounted on white wall tires comes with the car. Other than that it is completely original, and will come with the factory fender skirts, but they are not attached.
+          </p>
+          <h2 class="mdm-bold mb-2">02</h2>
+          <p>
+            Climb inside the spacious interior of this car, with maroon upholstery and leather lining. All of the gauges are in working order and the radio has been replaced for a newer bluetooth stereo. All electric parts of the interior are in working order and have been checked recently.
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-right histori-3 px-0">
+    <div class="container-xxl py-5" id="banner">
+      <div class="d-lg-none">
+        <img src="images/history-3-mob.png" alt="w-100" class="w-100 px-5">
+      </div>
+      <div class="col-lg-6 col-12 p-5 my-lg-5">
+        <h2 class="mdm-bold my-2">03</h2>
+        <p>
+          A 455 cubic inch V8 sits in the front of this car making enough horsepower to have a good time. Mostly stock, the carburetor has been redone as well as other pieces have been swapped for chrome.
+        </p>
+        <h2 class="mdm-bold mb-2">04</h2>
+        <p>
+          An independent pre-purchase inspection found this car to be in excellent condition. Despite taking a few minutes to warm up once started, the car runs well with almost everything in working order. The car has a clean title under the owner’s name and is currently registered.
+        </p>
+      </div>
+      <div class="col-6 d-none d-lg-block"></div>
+    </div>
+  </div>
+</section>
+
+<!-- videos -->
+<section class="mb-5">
+  <div class="container-xxl my-5">
+      <div class="text-center p-5">
+          <h1><b>VIDEO</b></h1>
+      </div>
+      <div class="row videos">
+          <div class="col-sm-6">
+              <a href="#">
+                  <div class="card bg-dark text-white">
+                      <img src="images/video-1.png" class="card-img" alt="...">
+                      <div class="card-img-overlay text-center">
+                          <h1 class="card-title b"><i class="far fa-play-circle"></i></h1>
+                          <h5 class="mdm-bold">
+                            1965 Pontiac Grand Prix Summary
+                          </h5>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#">
+                  <div class="card bg-dark text-white">
+                      <img src="images/video-2.png" class="card-img" alt="...">
+                      <div class="card-img-overlay text-center">
+                          <h1 class="card-title b"><i class="far fa-play-circle"></i></h1>
+                          <h5 class="mdm-bold">
+                            1965 Pontiac Grand Prix Summary
+                          </h5>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="bid-detail">
+  <div class="container-xxl py-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+          <h2 class="b">1970 Pontia Trans AM</h2>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class="pe-2">Share</div>
+          <div><i class="fab fa-facebook-f media"></i></div>
+          <div><i class="fab fa-twitter media"></i></div>
+          <div><i class="fab fa-instagram media"></i></div>
+          <div><i class="fab fa-youtube media"></i></div>
+          <div><i class="far fa-envelope media"></i></div>
+      </div>
+    </div>
+    <div>
+      <div class="row align-items-center border border-10 pt-2 ps-2">
+        <div class="col-lg-4 col-12 p-0 position-relative">
+          <a href="Auction-detail.html" class="">
+            <img src="images/auction-car-4.png" class="card-img-top" alt="...">
+              <div class="reserve-tag">Reserve</div>
+              <div><h4><i class="far fa-heart"></i></h4></div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-6">
+          <h5 class="pb-3"><b>Current Bid</b></h5>
+          <h2 class="theme"><b>$ 34,250</b></h2>
+          <p class="pb-4">By Jdaniels123</p>
+          <p class="pt-4"><b>Ending</b> 5 Days 11 Hours</p>
+        </div>
+        <div class="col-lg-4 col-6 text-center">
+          <div class="p-4">
+            <button class="my-btn org-border b w-75" data-bs-toggle="modal" data-bs-target="#place-bid">PLACE BID</button>
+          </div>
+          <div class="px-4">
+            <button class="my-btn b ms-2 black-btn w-75" data-bs-toggle="modal" data-bs-target="#place-bid">ABSENTEE BID</button>
+          </div>
+          <div class="pt-4 absentee-btn" type="button" data-bs-toggle="modal" data-bs-target="#absentee-btn">
+            <span class="pe-2"><i class="fas fa-info-circle theme"></i></span> What is Absentee Bid
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- absentee Pop-up  -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="absentee-btn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center border-10 p-3 bg-white">
+            <h3>
+              Absentee Bid
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat ultrices ex, a rhoncus neque rutrum nec. Vivamus finibus ante varius, varius sapien vitae, ultricies justo. <br>
+
+              Donec convallis ac massa sit amet commodo. Vivamus fermentum nisl porta, pulvinar metus nec, feugiat orci. Praesent convallis est vitae felis finibus rutrum. Aenean nec orci in sapien ultricies gravida. Suspendisse ornare eu ligula eget hendrerit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- comments -->
+    <div class="d-flex align-items-center justify-content-between pt-5" >
+      <div >
+        <h2><b>Comments & Bids</b></h2>
+      </div>
+      <div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="Newest-tab" data-bs-toggle="pill" data-bs-target="#Newest" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Newest</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Comments-tab" data-bs-toggle="pill" data-bs-target="#Comments" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Seller Comments</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="History-tab" data-bs-toggle="pill" data-bs-target="#History" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bid History</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-end">
+      <form>
+        <input type="text" class="form-control rounded-0 w-100 py-3 my-3" placeholder="Add a comment">
+        <div>
+          <button class="my-btn org-border b">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="Newest" role="tabpanel" aria-labelledby="Newest-tab">
+        <div class="d-flex">
+          <div class="d-flex col-lg-7 col-12">
+            <div class="profile-pic col-3"></div>
+            <div class="px-4">
+              <div class="d-flex align-items-center">
+                <div>
+                  <h4 class="text-muted">Mukesh_pensia</h4>
+                </div>
+                <div class="border px-2 mx-3 font-12">Bidder</div>
+              </div>
+              <div>
+                <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                <div class="d-flex font-12 b">
+                  <div class="theme reply" type="button">Reply</div>
+                  <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex pt-5">
+          <div class="d-flex col-lg-7 col-12">
+            <div class="profile-pic col-3"></div>
+            <div class="px-4">
+              <div class="d-flex align-items-center">
+                <div>
+                  <h4 class="text-muted">Mukesh_pensia</h4>
+                </div>
+                <div class="border px-2 mx-3 font-12">Bidder</div>
+              </div>
+              <div class="mt-3">
+                <h2 class="bg-theme border-10 px-2 d-inline">
+                  $ 31000
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex pt-5">
+          <div class="d-flex col-lg-7 col-12">
+            <div class="profile-pic col-3"></div>
+            <div class="px-4">
+              <div class="d-flex align-items-center">
+                <div>
+                  <h4 class="text-muted">Mukesh_pensia</h4>
+                </div>
+                <div class="border px-2 mx-3 font-12">
+                  <span><i class="fas fa-check-circle"></i></span>
+                  Seller
+                </div>
+              </div>
+              <div>
+                <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                <div class="d-flex font-12 b">
+                  <div class="theme reply" type="button">Reply</div>
+                  <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                </div>
+                <div class="pt-5">
+                  <button class="my-btn org-border b">READ MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="Comments" role="tabpanel" aria-labelledby="Comments-tab">
+        <div>
+          <div class="d-flex">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">Bidder</div>
+                </div>
+                <div>
+                  <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                  <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                  <div class="d-flex font-12 b">
+                    <div class="theme reply" type="button">Reply</div>
+                    <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex pt-5">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">Bidder</div>
+                </div>
+                <div class="mt-3">
+                  <h2 class="bg-theme border-10 px-2 d-inline">
+                    $ 31000
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex pt-5">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">
+                    <span><i class="fas fa-check-circle"></i></span>
+                    Seller
+                  </div>
+                </div>
+                <div>
+                  <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                  <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                  <div class="d-flex font-12 b">
+                    <div class="theme reply" type="button">Reply</div>
+                    <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                  </div>
+                  <div class="pt-5">
+                    <button class="my-btn org-border b">READ MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="History" role="tabpanel" aria-labelledby="History-tab">
+        <div>
+          <div class="d-flex">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">Bidder</div>
+                </div>
+                <div>
+                  <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                  <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                  <div class="d-flex font-12 b">
+                    <div class="theme reply" type="button">Reply</div>
+                    <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex pt-5">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">Bidder</div>
+                </div>
+                <div class="mt-3">
+                  <h2 class="bg-theme border-10 px-2 d-inline">
+                    $ 31000
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex pt-5">
+            <div class="d-flex col-lg-7 col-12">
+              <div class="profile-pic col-3"></div>
+              <div class="px-4">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="text-muted">Mukesh_pensia</h4>
+                  </div>
+                  <div class="border px-2 mx-3 font-12">
+                    <span><i class="fas fa-check-circle"></i></span>
+                    Seller
+                  </div>
+                </div>
+                <div>
+                  <p>Congratulations to the Buyer and Seller. This is a solid result for both parities when factoring in the cost to address common issues such as the timing chain, tensioner, etc.</p>
+                  <p>Cannaught Green, IMHO, is the single best color ever put on a MINI, second only to Royal Grey Metallic. As others have said, it’s a special MINI in many ways from the paint to the build process and the man it’s dedicated to. Enjoy!</p>
+                  <div class="d-flex font-12 b">
+                    <div class="theme reply" type="button">Reply</div>
+                    <div class="mx-5 flag" type="button">Flag as inappropriate</div>
+                  </div>
+                  <div class="pt-5">
+                    <button class="my-btn org-border b">READ MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+    <div class="container-xxl py-5 d-flex justify-content-between flex-wrap">
+        <div class="d-flex justify-content-between align-items-center pb-5 flex-wrap col-lg-12 col-6">
+            <div class="col-lg col-6">
+                <a href="clasiq.html">
+                    <img src="images/logo.png" alt="logo" class="w-75">
+                </a>
+            </div>
+            <div class="col-lg-8 col-11 text-center">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg col-11 text-end">
+                (888) 469-1435
+            </div>
+        </div>
+        <div class="d-lg-flex justify-content-between align-items-center col-lg-12 col-6 flex-wrap">
+            <div class="col-3 d-none d-lg-block">
+                <span>&#169 </span> CLACIQ 2021
+            </div>
+            <div class="text-center col-lg-6 col-12">
+                <div>
+                    <h4 class="b">JOIN THE COMMUNITY</h4>
+                </div>
+                <div>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-11 text-end">
+                MADE BY ORIGINAL PEOPLE
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+<script>
+  $(window).scroll(function(){
+    
+    if ( $(window).scrollTop() > 650 ){
+          
+        $('.bg').addClass('pink');
+        
+    }
+    else{
+        $('.bg').removeClass('pink');
+        
+    }
+});
+</script>
+</body>
+
+</html>
