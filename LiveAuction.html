@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icon.min.css">
+    <link rel="stylesheet" href="css/clasiq.css">
+    <title>Clasiq: Home/</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+                <div class="container-xxl" id="header">
+                    <a class="navbar-brand me-0" href="index.html">
+                        <img src="images/logo.png" alt="Logo" class="w-75">
+                    </a>
+                    <div>
+                        <span class="d-lg-none px-4"><i class="fas fa-search"></i></span>
+                        <button class="navbar-toggler" type="" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="border-0"><i class="fas fa-bars"></i></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item my-dropdown">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    VIEW LIVE AUCTION
+                                </a>
+                                <!-- <ul class="my-dropdown-menu">
+                            <li class="my-drop-item"><a >LIVE AUCTION</a></li>
+                            <li class="my-drop-item"><a>COMPLETED AUCTION</a></li>
+                        </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOW IT WORK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">VALUE YOUR CAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="content.html">CLASIQ CONTENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-lg-none" aria-current="page" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#Log-in">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active d-lg-none" aria-current="page" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#sign-up">Sign Up</a>
+                            </li>
+                        </ul>
+                        <form class="d-lg-flex d-none align-items-center">
+                            <div>
+                                <input class="form-control me-2 ps-5 col" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </div>
+                            <div class="search-icon me-2">
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </div>
+                            <button type="button" class="my-btn bg-theme white border-0 col">
+                                <span class="d-none d-xl-inline" data-bs-toggle="modal" data-bs-target="#sign-up">SIGN
+                                    UP / </span> <span data-bs-toggle="modal" data-bs-target="#Log-in">LOGIN</span>
+                            </button>
+                            <div class="serch-i">
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Sign up Pop-up -->
+
+        <div class="modal fade" id="sign-up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="text-end p-3 pe-0">
+                        <h4><i class="fas fa-times white" data-bs-dismiss="modal" role="button"></i></h4>
+                    </div>
+                    <div class="d-flex flex-wrap  justify-content-between align-items-center">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <h2 class="white">ALREADY HAVE AN ACCOUNT?</h2>
+                            <button type="button" class="btn-white my-btn" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" data-bs-target="#Log-in">
+                                LOGIN
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="bg-white p-5">
+                                <h3 class="mb-5">Sign Up</h3>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control rounded-0" id="inputEmail4"
+                                            placeholder="Email Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control rounded-0" id="formGroupExampleInput"
+                                            placeholder="User Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                            placeholder="New Password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                            placeholder="Conferm Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            I accept the <a href="">Terms & Conditions</a> and <a href="">Privacy
+                                                Policy</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            <a href="">Subscribe to the CLASIQ weekly E-mail</a>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="bg-theme white border-0 my-btn"
+                                            data-bs-toggle="modal" data-bs-target="#sign-up">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- logIn Popup modal -->
+
+        <div class="modal fade" id="Log-in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="text-end p-3 pe-0">
+                        <h4><i class="fas fa-times white" data-bs-dismiss="modal" role="button"></i></h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <h2 class="white">CREATE A NEW ACCOUNT</h2>
+                            <button type="button" class="btn-white my-btn" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" data-bs-target="#sign-up">
+                                SIGN UP
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="bg-white p-5">
+                                <h3 class="mb-5">Sign In</h3>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control rounded-0" id="inputEmail4"
+                                            placeholder="Email Address / User name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control rounded-0" id="inputPassword4"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <div class="mb-3 blue">
+                                        Forgot Your Password?
+                                    </div>
+                                    <div>
+                                        <button type="button" class="bg-theme white border-0 my-btn">
+                                            SIGN IN
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+    </section>
+
+    <section class="my-5">
+        <div class="container-xxl auction" id="auction">
+            <div class="d-flex justify-content-between align-items-center my-4">
+                <div>
+                    <h2>Auction</h2>
+                </div>
+                <div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Ending Soon</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Newly Listed</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link me-0" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">No Reserve</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="border  border-10 bg-white position-relative auction-bid-time">
+                                                <span class="position-absolute my-progress"></span>
+                                                <div class=" p-3 d-flex justify-content-between position-relative">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0" id="countdown"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-3.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-4.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-5.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-6.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="my-btn org-border">View All Live Auction</button>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-4.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="border  border-10 bg-white position-relative">
+                                                <span class="position-absolute my-progress"></span>
+                                                <div class=" p-3 d-flex justify-content-between position-relative">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-5.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-6.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-3.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="border  border-10 bg-white position-relative">
+                                                <span class="position-absolute my-progress"></span>
+                                                <div class=" p-3 d-flex justify-content-between position-relative">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-3.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-4.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-5.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="Auction-detail.html">
+                                <div class="card">
+                                    <img src="images/auction-car-6.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-0">
+                                        <div class="reserve-tag">Reserve</div>
+                                        <div>
+                                            <h4><i class="far fa-heart"></i></h4>
+                                        </div>
+                                        <p class="card-text">
+                                        <div class="mx-3 auction-detail">
+                                            <div class="p-3 border  border-10 bg-white">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="col-6">
+                                                        <h6 class="b">Current Bid</h6>
+                                                        <h5 class="b theme m-0">$ 240,000</h5>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <h6 class="b">End In</h6>
+                                                        <h5 class="b theme m-0"><span><i
+                                                                    class="far fa-clock theme"></i></span> 15 Seconds
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3">
+                                                <h4 class="b">1970 Pontia Trans AM</h4>
+                                                Rebuilt 400ci engine with a 5-speed manual <br>
+                                                <span><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                                Loss Angels, ca. 335002
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-xxl py-5 d-flex justify-content-between flex-wrap">
+            <div class="d-flex justify-content-between align-items-center pb-5 flex-wrap col-lg-12 col-6">
+                <div class="col-lg col-6">
+                    <a href="clasiq.html">
+                        <img src="images/logo.png" alt="logo" class="w-75">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-11 text-center">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg col-11 text-end">
+                    (888) 469-1435
+                </div>
+            </div>
+            <div class="d-lg-flex justify-content-between align-items-center col-lg-12 col-6 flex-wrap">
+                <div class="col-3 d-none d-lg-block">
+                    <span>&#169 </span> CLACIQ 2021
+                </div>
+                <div class="text-center col-lg-6 col-12">
+                    <div>
+                        <h4 class="b">JOIN THE COMMUNITY</h4>
+                    </div>
+                    <div>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-11 text-end">
+                    MADE BY ORIGINAL PEOPLE
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="js/developer.js"></script>
+</body>
+
+</html>

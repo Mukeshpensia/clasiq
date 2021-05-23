@@ -443,7 +443,14 @@ form{
     left:0;
     margin: 10px;
 }
-
+.reserve-tag:hover{
+    color: #fff;
+    background-color:#FF8800;
+}
+.fa-heart:hover{
+    color: #fff;
+    background-color:#FF8800;
+}
 .fa-heart{
     background-color: #fff;
     color: #666;
@@ -462,10 +469,14 @@ form{
 }
 .my-progress{
     background-color: rgb(241, 209, 138);
-    width:70%;
+    width: 100%;
     height: 100%;
     border-radius: 10px 0 0 10px;
 }
+.auction-bid-time{
+    overflow:hidden;
+}
+
 .org-border{
     border: 1px solid rgb(255, 136, 0);
     background-color: #fff;
@@ -495,6 +506,10 @@ form{
     left: 0;
     transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
+}
+.carousel-item{
+    border-radius: 10px;
+    
 }
 .banner4-bg{
     background-image: url('../images/radial-bg.png');
@@ -564,7 +579,10 @@ footer a{
     color: inherit;
 }
 footer li:hover a{
-    color: #FF8800;
+    color: #FF8800 !important;
+}
+footer a:hover {
+    color: #FF8800 !important;
 }
 
 
@@ -627,15 +645,6 @@ footer li:hover a{
     position: absolute;
     bottom: 15px;
 }
-
-.bg.pink{
-    /* position: fixd;
-    top: 63px;
-    left: 0;
-    background-color: antiquewhite;
-    z-index: 999;e */
-}
-
 
 #nav-2 .org-border{
     background-color: antiquewhite;
@@ -805,26 +814,27 @@ td{
     .review-text{
         position: absolute ;
         padding: 20px;
-        width: 75%;
+        width: 80%;
         top: 50%;
-        left: 12.5%;
+        left: 10%;
         transform: translateY(-50%);
         background-color: rgb(255, 255, 255);
+    }
+    footer{
+        align-items: center !important;
     }
     footer li{
         list-style-type: none;
         display:block;
-        margin:8px 8px;
+        margin:10px 8px;
     }
-    footer img{
-        width: 50%;
+    footer ul{
+        text-align: center;
     }
-    footer .text-end{
-        text-align: left !important;
+    footer .text-end, .text-start{
+        text-align: center !important;
     }
-    footer .text-center{
-        text-align: left !important;
-    }
+    
     .lower-col{
         padding-top: 20px;
         position:unset;
@@ -849,6 +859,9 @@ td{
     .Vehicle-History p{
         padding: 20px 10px;
     }
+    .copyright{
+        padding-bottom: 15px;
+    }
 }
 
 
@@ -859,3 +872,21 @@ td{
     flex-wrap: wrap;
     }
 } */
+
+@media(max-width: 576px){
+    .banner-text {
+        padding: 80px 0;
+        text-align: start;
+        margin-bottom: 0;
+    }
+    .how-text{
+        margin-top: 0;
+    }
+    .how-work .col-12{
+        padding-bottom: 25px;
+    }
+    .banner2-text{
+        text-align: start;
+        margin-left: 1.5rem !important;
+    }
+}
