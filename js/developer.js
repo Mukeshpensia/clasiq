@@ -1,3 +1,18 @@
+
+// Header 2 
+$(window).scroll(function(){
+    
+    if ( $(window).scrollTop() > 650 ){
+          
+        $('.bg').addClass('pink');
+    }
+    else{
+        $('.bg').removeClass('pink');  
+    }
+});
+
+
+// count down progress bar
 function progress (timeleft, timetotal, $element){
     var barWidth = $element.parent('.auction-bid-time').width();
     var progessBarWidth = timeleft * barWidth / timetotal;

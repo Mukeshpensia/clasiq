@@ -280,7 +280,7 @@
               <div>
                   <button class="my-btn org-border b" data-bs-toggle="modal" data-bs-target="#place-bid">PLACE BID</button>
               </div>
-              <div class="d-none d-md-block">
+              <div class="d-none d-sm-block">
                 <button class="my-btn b ms-2 black-btn" data-bs-toggle="modal" data-bs-target="#place-bid">ABSENTEE BID</button>
               </div>
           </div>
@@ -440,8 +440,8 @@
       <table class="table table-bordered">
         <tbody>
           <tr>
-              <td class="mdm-bold bg-light">Engine</td>
-              <td>455 T/A motor</td>
+              <td class="mdm-bold bg-light col-top-border">Engine</td>
+              <td class="col-top-border">455 T/A motor</td>
               <td class="mdm-bold bg-light">Transmission</td>
               <td>T375 w/ a shift kit</td>
           </tr>
@@ -510,7 +510,7 @@
     </div>
   </div>
   <div class="container-fluid bg-right histori-3 px-0">
-    <div class="container-xxl py-5" id="banner">
+    <div class="container-xxl" id="banner">
       <div class="d-lg-none">
         <img src="images/history-3-mob.png" alt="w-100" class="w-100 px-5">
       </div>
@@ -532,7 +532,7 @@
 <!-- videos -->
 <section class="mb-5">
   <div class="container-xxl my-5">
-      <div class="text-center p-5">
+      <div class="text-center p-sm-5 p-3 ">
           <h1><b>VIDEO</b></h1>
       </div>
       <div class="row videos">
@@ -567,7 +567,7 @@
 </section>
 
 <section class="bid-detail">
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-sm-5">
     <div class="d-flex flex-wrap justify-content-between align-items-center">
       <div>
           <h2 class="b">1970 Pontia Trans AM</h2>
@@ -631,9 +631,10 @@
       </div>
     </div>
 
+
     <!-- comments -->
-    <div class="d-flex align-items-center justify-content-between pt-5" >
-      <div >
+    <div class="d-flex flex-wrap align-items-center justify-content-md-between pt-5 justify-content-center" >
+      <div>
         <h2><b>Comments & Bids</b></h2>
       </div>
       <div>
@@ -879,75 +880,64 @@
 
 
 <footer>
-    <div class="container-xxl py-5 d-flex justify-content-between flex-wrap">
-        <div class="d-flex justify-content-between align-items-center pb-5 flex-wrap col-lg-12 col-6">
-            <div class="col-lg col-6">
-                <a href="clasiq.html">
-                    <img src="images/logo.png" alt="logo" class="w-75">
-                </a>
-            </div>
-            <div class="col-lg-8 col-11 text-center">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms & Conditions</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg col-11 text-end">
-                (888) 469-1435
-            </div>
-        </div>
-        <div class="d-lg-flex justify-content-between align-items-center col-lg-12 col-6 flex-wrap">
-            <div class="col-3 d-none d-lg-block">
-                <span>&#169 </span> CLACIQ 2021
-            </div>
-            <div class="text-center col-lg-6 col-12">
-                <div>
-                    <h4 class="b">JOIN THE COMMUNITY</h4>
-                </div>
-                <div>
-                    <a href="#">Facebook</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-11 text-end">
-                MADE BY ORIGINAL PEOPLE
-            </div>
-        </div>
+  <div class="container-xxl py-5 d-flex justify-content-lg-between flex-wrap">
+    <div class="d-flex flex-wrap justify-content-lg-between align-items-center pb-5 justify-content-center col-12 ">
+      <div class="col-lg col-3 text-center text-lg-start">
+        <a href="clasiq.html">
+          <img src="images/logo.png" alt="logo" class="w-75">
+        </a>
+      </div>
+      <div class="col-lg-8 text-center col-12">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg col-12 text-end">
+        (888) 469-1435
+      </div>
     </div>
+    <div class="d-flex justify-content-lg-between flex-wrap align-items-center col-12 ">
+      <div class="col-12 col-lg text-center text-lg-start copyright">
+        <span>&#169 </span> CLACIQ 2021
+      </div>
+      <div class="text-center col-lg-6 col-12">
+          <div>
+            <h4 class="b">JOIN THE COMMUNITY</h4>
+          </div>
+          <div>
+            <a href="#">Facebook</a>
+          </div>
+      </div>
+      <div class="text-end col-lg col-12">
+        MADE BY ORIGINAL PEOPLE
+      </div>
+    </div>
+  </div>
 </footer>
 <script src="js/jquery.min.js"></script>
+<script src="js/developer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-    crossorigin="anonymous"></script>
-<script>
-  $(window).scroll(function(){
-    
-    if ( $(window).scrollTop() > 650 ){
-          
-        $('.bg').addClass('pink');
-        
-    }
-    else{
-        $('.bg').removeClass('pink');
-        
-    }
-});
+    crossorigin="anonymous">
 </script>
+
 </body>
 
 </html>

@@ -294,7 +294,6 @@ nav .my-btn:hover{
     left: 0%;
     width:0%;
     height: 2px;
-    /* background-color:rgb(255, 136, 0); */
     transition: all 0.3s ease;
 }
 
@@ -460,6 +459,9 @@ form{
     top: 0;
     right:0;
     margin: 10px;
+}
+.tab-content .col:hover{
+    transform: translateY(-10px);
 }
 
 .auction-detail{
@@ -690,6 +692,7 @@ td{
     width: 100%;
 }
 
+
 .bid-detail .black-btn{
     margin-left: 0 !important;
 }
@@ -728,7 +731,12 @@ td{
     background-color: antiquewhite;
 }
 
-
+/* live Auction */
+.hover-theme:hover{
+    background-color: #FF8800;
+    color: #fff;
+    border-color: #FF8800;
+}
 
 
 
@@ -749,7 +757,6 @@ td{
         width: 0%;
     }
     #header .nav-link{
-        /* margin: 0px 1rem; */
         text-align: center;
         font-weight: 500;
     }
@@ -842,15 +849,12 @@ td{
     }
     .histori-1{
         background-image: unset;
-        /* color:#fff !important; */
     }
     .histori-2{
         background-image:unset;
-        /* color:#fff !important; */
     }
     .histori-3{
         background-image: unset;
-        /* color:#fff !important; */
     }
     .Vehicle-History h2{
         font-weight: bold;
@@ -866,12 +870,26 @@ td{
 
 
 
-/* @media (max-width: 768px){ 
+@media (max-width: 768px){
     .table tr {
     display: flex;
     flex-wrap: wrap;
     }
-} */
+    .table tr td:nth-child(odd) {
+        width: 200px;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .table tr td:nth-child(even) {
+        width: calc(100% - 200px);
+        border-bottom: 1px solid #dee2e6;
+    }
+    .table-bordered>:not(caption)>* {
+        border-width: 0;
+    }
+    .col-top-border{
+        border-top-width: 1px !important;
+    }
+}
 
 @media(max-width: 576px){
     .banner-text {
@@ -888,5 +906,8 @@ td{
     .banner2-text{
         text-align: start;
         margin-left: 1.5rem !important;
+    }
+    .videos .col-sm-6{
+        margin-bottom: 15px;
     }
 }
