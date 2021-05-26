@@ -287,20 +287,6 @@ nav .my-btn:hover{
     padding: 12px 1rem;
 }
 
-#header .nav-link:before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    width:0%;
-    height: 2px;
-    transition: all 0.3s ease;
-}
-
-#header .nav-link:hover:before{
-    width:100%;
-}
-
 #header .nav-link:hover{
     color: rgb(255, 136, 0) !important;
 }
@@ -594,7 +580,7 @@ footer a:hover {
     display: inline-block;
     height: 40px;
     width: 40px;
-    border: 1px solid #eee;
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 50%;
 }
 .season-no-box h4{
@@ -605,6 +591,10 @@ footer a:hover {
 }
 .season-no-box + p:hover{
     color: #FF8800 ;
+}
+
+.banner-img1{
+    background-image: url('../images/banner-1.png');
 }
 .banner-img2{
     background-image: url('../images/clasiq-content-banner-2.png');
@@ -889,6 +879,32 @@ td{
     .col-top-border{
         border-top-width: 1px !important;
     }
+    .banner-img1{
+        background-image: none;
+        margin-top: 40px;
+    }
+    .banner-img1 .container-xxl{
+        padding: 0mm;
+    }
+    .content-bnr1-text{
+        text-align: center;
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .banner-img2{
+        background-image: none;
+    }
+    .content-bnr2-text{
+        margin: 0 !important;
+        padding: 0 1.5rem !important;
+    }
+    .banner-img3{
+        background-image: none;
+    }
+    #listen-Clasiq .listen-col{
+        margin-bottom: 1rem;
+    }
+    
 }
 
 @media(max-width: 576px){
