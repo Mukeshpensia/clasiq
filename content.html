@@ -32,13 +32,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item my-dropdown">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="LiveAuction.html">
                               VIEW LIVE AUCTION
                             </a>
-                            <!-- <ul class="my-dropdown-menu">
-                              <li class="my-drop-item"><a >LIVE AUCTION</a></li>
-                              <li class="my-drop-item"><a>COMPLETED AUCTION</a></li>
-                            </ul> -->
                           </li>
                           <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#">HOW IT WORK</a>
@@ -185,11 +181,15 @@
             </div>
         </div>
     </header>
+
     <!-- banner 1 -->
     <section class="bg-light">
-        <div class="container-fluid bg-right banner1-bg pt-5 px-0">
-            <div class="container-xxl mt-3" id="banner">
-                <div class="col-6 py-5 my-5">
+        <div class="container-fluid bg-right banner-img1 pt-lg-5 px-0">
+            <div class="container-xxl mt-lg-3 d-flex flex-wrap align-items-center">
+                <div class="col-md-6 col-12 d-md-none">
+                    <img src="images/banner-1-mob.png" alt="" class="w-100">
+                </div>
+                <div class="col-md-6 col-12 py-5 my-5 content-bnr1-text">
                     <h2><b>Clasiq Original Stories</b></h2>
                     <p class="text-muted">Built by the community, for the community</p>
                     <h4 class="pt-3"><b>Our Seasons</b></h4>
@@ -224,11 +224,11 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col d-none d-md-block"></div>
                     </div>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6 d-none d-md-block"></div>
             </div>
         </div>
     </section>
@@ -237,8 +237,10 @@
     <section>
         <div class="container-fluid bg-left banner-img2 px-0">
             <div class="container-xxl py-3" id="banner">
-                <div class="col-6"></div>
-                <div class="col-6 my-5 p-5">
+                <div class="col-md-6 col-12">
+                    <img src="images/clasiq-content-banner-2-mob.jpg" alt="" class="w-100 d-md-none">
+                </div>
+                <div class="col-md-6 col-12 my-5 p-5 content-bnr2-text" >
                     <h2 class="pt-5 mb-3"><b>
                             News & analysis from the classic car world
                         </b></h2>
@@ -247,7 +249,7 @@
                         about everything going on in the classic car world. Get in touch if you want to write for us.
                     </p>
                     <div class="pb-5 my-4">
-                        <button class="my-btn org-border"><b>LEARN MORE</b></button>
+                        <button class="my-btn org-border hover-theme"><b>LEARN MORE</b></button>
                     </div>
                 </div>
             </div>
@@ -258,7 +260,10 @@
     <section>
         <div class="container-fluid bg-right banner-img3 px-0">
             <div class="container-xxl py-3" id="banner">
-                <div class="col-6 my-5 p-5">
+                <div class="col-12 d-md-none">
+                    <img src="images/clasiq-content-banner-3-mob.jpg" alt="" class="w-100 d-md-none">
+                </div>
+                <div class="col-md-6 col-12 my-5 p-5 content-bnr2-text">
                     <h2 class="pt-5 mb-3"><b>
                             Helpful information on a range of classic car topics
                         </b></h2>
@@ -267,8 +272,8 @@
                         most interesting Guides on everything classic car related. From 3D printing parts to the story
                         of….
                     </p>
-                    <div class="pb-5 my-4">
-                        <button class="my-btn org-border"><b>LEARN MORE</b></button>
+                    <div class="pb-md-5 my-md-4">
+                        <button class="my-btn org-border hover-theme"><b>LEARN MORE</b></button>
                     </div>
                 </div>
                 <div class="col-6"></div>
@@ -277,13 +282,13 @@
     </section>
 
     <!-- listen Clasiq -->
-    <section class="mb-5">
+    <section class="mb-5" id="listen-Clasiq">
         <div class="container-xxl my-5">
             <div class="text-center p-5">
                 <h1><b>LISTEN CLASIQ</b></h1>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6 listen-col">
                     <a href="#">
                         <div class="card bg-dark text-white hover-up">
                             <img src="images/listen-1.png" class="card-img" alt="...">
@@ -299,7 +304,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <a href="#">
                         <div class="card bg-dark text-white hover-up">
                             <img src="images/listen-2.png" class="card-img" alt="...">
@@ -320,55 +325,55 @@
     </section>
 
     <footer>
-        <div class="container-xxl py-5 d-flex justify-content-between flex-wrap">
-            <div class="d-flex justify-content-between align-items-center pb-5 flex-wrap col-lg-12 col-6">
-                <div class="col-lg col-6">
-                    <a href="clasiq.html">
-                        <img src="images/logo.png" alt="logo" class="w-75">
-                    </a>
+        <div class="container-xxl py-5 d-flex justify-content-lg-between flex-wrap">
+          <div class="d-flex flex-wrap justify-content-lg-between align-items-center pb-5 justify-content-center col-12 ">
+            <div class="col-lg col-3 text-center text-lg-start">
+              <a href="clasiq.html">
+                <img src="images/logo.png" alt="logo" class="w-75">
+              </a>
+            </div>
+            <div class="col-lg-8 text-center col-12">
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg col-12 text-end">
+              (888) 469-1435
+            </div>
+          </div>
+          <div class="d-flex justify-content-lg-between flex-wrap align-items-center col-12 ">
+            <div class="col-12 col-lg text-center text-lg-start copyright">
+              <span>&#169 </span> CLACIQ 2021
+            </div>
+            <div class="text-center col-lg-6 col-12">
+                <div>
+                  <h4 class="b">JOIN THE COMMUNITY</h4>
                 </div>
-                <div class="col-lg-8 col-11 text-center">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg col-11 text-end">
-                    (888) 469-1435
+                <div>
+                  <a href="#">Facebook</a>
                 </div>
             </div>
-            <div class="d-lg-flex justify-content-between align-items-center col-lg-12 col-6 flex-wrap">
-                <div class="col-3 d-none d-lg-block">
-                    <span>&#169 </span> CLACIQ 2021
-                </div>
-                <div class="text-center col-lg-6 col-12">
-                    <div>
-                        <h4 class="b">JOIN THE COMMUNITY</h4>
-                    </div>
-                    <div>
-                        <a href="#">Facebook</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-11 text-end">
-                    MADE BY ORIGINAL PEOPLE
-                </div>
+            <div class="text-end col-lg col-12">
+              MADE BY ORIGINAL PEOPLE
             </div>
+          </div>
         </div>
     </footer>
 

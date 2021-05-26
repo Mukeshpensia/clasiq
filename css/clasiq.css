@@ -287,21 +287,6 @@ nav .my-btn:hover{
     padding: 12px 1rem;
 }
 
-#header .nav-link:before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    width:0%;
-    height: 2px;
-    /* background-color:rgb(255, 136, 0); */
-    transition: all 0.3s ease;
-}
-
-#header .nav-link:hover:before{
-    width:100%;
-}
-
 #header .nav-link:hover{
     color: rgb(255, 136, 0) !important;
 }
@@ -443,7 +428,14 @@ form{
     left:0;
     margin: 10px;
 }
-
+.reserve-tag:hover{
+    color: #fff;
+    background-color:#FF8800;
+}
+.fa-heart:hover{
+    color: #fff;
+    background-color:#FF8800;
+}
 .fa-heart{
     background-color: #fff;
     color: #666;
@@ -454,6 +446,9 @@ form{
     right:0;
     margin: 10px;
 }
+.tab-content .col:hover{
+    transform: translateY(-10px);
+}
 
 .auction-detail{
     width: 95%;
@@ -462,10 +457,14 @@ form{
 }
 .my-progress{
     background-color: rgb(241, 209, 138);
-    width:70%;
+    width: 100%;
     height: 100%;
     border-radius: 10px 0 0 10px;
 }
+.auction-bid-time{
+    overflow:hidden;
+}
+
 .org-border{
     border: 1px solid rgb(255, 136, 0);
     background-color: #fff;
@@ -495,6 +494,10 @@ form{
     left: 0;
     transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
+}
+.carousel-item{
+    border-radius: 10px;
+    
 }
 .banner4-bg{
     background-image: url('../images/radial-bg.png');
@@ -564,7 +567,10 @@ footer a{
     color: inherit;
 }
 footer li:hover a{
-    color: #FF8800;
+    color: #FF8800 !important;
+}
+footer a:hover {
+    color: #FF8800 !important;
 }
 
 
@@ -574,7 +580,7 @@ footer li:hover a{
     display: inline-block;
     height: 40px;
     width: 40px;
-    border: 1px solid #eee;
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 50%;
 }
 .season-no-box h4{
@@ -585,6 +591,10 @@ footer li:hover a{
 }
 .season-no-box + p:hover{
     color: #FF8800 ;
+}
+
+.banner-img1{
+    background-image: url('../images/banner-1.png');
 }
 .banner-img2{
     background-image: url('../images/clasiq-content-banner-2.png');
@@ -627,15 +637,6 @@ footer li:hover a{
     position: absolute;
     bottom: 15px;
 }
-
-.bg.pink{
-    /* position: fixd;
-    top: 63px;
-    left: 0;
-    background-color: antiquewhite;
-    z-index: 999;e */
-}
-
 
 #nav-2 .org-border{
     background-color: antiquewhite;
@@ -681,6 +682,7 @@ td{
     width: 100%;
 }
 
+
 .bid-detail .black-btn{
     margin-left: 0 !important;
 }
@@ -719,7 +721,12 @@ td{
     background-color: antiquewhite;
 }
 
-
+/* live Auction */
+.hover-theme:hover{
+    background-color: #FF8800;
+    color: #fff;
+    border-color: #FF8800;
+}
 
 
 
@@ -740,7 +747,6 @@ td{
         width: 0%;
     }
     #header .nav-link{
-        /* margin: 0px 1rem; */
         text-align: center;
         font-weight: 500;
     }
@@ -805,26 +811,27 @@ td{
     .review-text{
         position: absolute ;
         padding: 20px;
-        width: 75%;
+        width: 80%;
         top: 50%;
-        left: 12.5%;
+        left: 10%;
         transform: translateY(-50%);
         background-color: rgb(255, 255, 255);
+    }
+    footer{
+        align-items: center !important;
     }
     footer li{
         list-style-type: none;
         display:block;
-        margin:8px 8px;
+        margin:10px 8px;
     }
-    footer img{
-        width: 50%;
+    footer ul{
+        text-align: center;
     }
-    footer .text-end{
-        text-align: left !important;
+    footer .text-end, .text-start{
+        text-align: center !important;
     }
-    footer .text-center{
-        text-align: left !important;
-    }
+    
     .lower-col{
         padding-top: 20px;
         position:unset;
@@ -832,15 +839,12 @@ td{
     }
     .histori-1{
         background-image: unset;
-        /* color:#fff !important; */
     }
     .histori-2{
         background-image:unset;
-        /* color:#fff !important; */
     }
     .histori-3{
         background-image: unset;
-        /* color:#fff !important; */
     }
     .Vehicle-History h2{
         font-weight: bold;
@@ -849,13 +853,77 @@ td{
     .Vehicle-History p{
         padding: 20px 10px;
     }
+    .copyright{
+        padding-bottom: 15px;
+    }
 }
 
 
 
-/* @media (max-width: 768px){ 
+@media (max-width: 768px){
     .table tr {
     display: flex;
     flex-wrap: wrap;
     }
-} */
+    .table tr td:nth-child(odd) {
+        width: 200px;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .table tr td:nth-child(even) {
+        width: calc(100% - 200px);
+        border-bottom: 1px solid #dee2e6;
+    }
+    .table-bordered>:not(caption)>* {
+        border-width: 0;
+    }
+    .col-top-border{
+        border-top-width: 1px !important;
+    }
+    .banner-img1{
+        background-image: none;
+        margin-top: 40px;
+    }
+    .banner-img1 .container-xxl{
+        padding: 0mm;
+    }
+    .content-bnr1-text{
+        text-align: center;
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .banner-img2{
+        background-image: none;
+    }
+    .content-bnr2-text{
+        margin: 0 !important;
+        padding: 0 1.5rem !important;
+    }
+    .banner-img3{
+        background-image: none;
+    }
+    #listen-Clasiq .listen-col{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media(max-width: 576px){
+    .banner-text {
+        padding: 80px 0;
+        text-align: start;
+        margin-bottom: 0;
+    }
+    .how-text{
+        margin-top: 0;
+    }
+    .how-work .col-12{
+        padding-bottom: 25px;
+    }
+    .banner2-text{
+        text-align: start;
+        margin-left: 1.5rem !important;
+    }
+    .videos .col-sm-6{
+        margin-bottom: 15px;
+    }
+}
